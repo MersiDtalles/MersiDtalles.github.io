@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collage Interactivo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="Titulo">
+        <h1>Colección de Verrano</h1>
+        <h2>¡Descubre nuestra nueva colección de verano!</h2>
+        <p>Explora una variedad de productos únicos y atractivos.</p>
+    </header>
+</div>
+    
+    <!-- Sección de Galería -->
+<div class="container">
+  <div class="gallery" id="gallery">
+    <!-- Las imágenes se generan desde JavaScript -->
+  </div>
+</div>
+
+<!-- Modal de imagen ampliada -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <button class="nav-button left" onclick="prevImage()">&#10094;</button>
+    
+    <div class="modal-body">
+      <img id="expandedImg" src="" alt="Imagen Ampliada" />
+      <div class="modal-text">
+        <h2 id="modalTitle">Título</h2>
+        <p id="modalDescription">Descripción</p>
+        <ul id="modalFeatures"></ul>
+      </div>
+    </div>
+
+    <button class="nav-button right" onclick="nextImage()">&#10095;</button>
+  </div>
+</div>
+
+<!-- Redes Sociales -->
+<div class="social-icons">
+    <a href="https://wa.me/tunumerodewhatsapp" target="_blank">
+      <img src="wasap.png" alt="WhatsApp" width="30" height="30">
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="inst.png" alt="Instagram" width="30" height="30">
+    </a>
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="face.png" alt="Facebook" width="30" height="30">
+    </a>
+    <a href="https://www.tiktok.com/" target="_blank">
+      <img src="tik.png" alt="TikTok" width="30" height="30">
+    </a>
+  </div>
+  
+
+</body>
+</html>
